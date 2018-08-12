@@ -11,10 +11,10 @@ function frameIt() {
   });
 }
 
-document.body.addEventListener('keydown', pressIt);
-function pressIt(e) {
+
+function pressIt() {
   $('#typing').on('keydown', function(e) {
-    if(g.which == 71) {
+    if(e.which == 71) {
       alert('G was pressed');
     }
   }, false); //false as 3rd param => will not alert ELSE IF another key!
