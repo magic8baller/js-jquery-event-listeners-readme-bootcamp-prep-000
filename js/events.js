@@ -10,12 +10,11 @@ function frameIt() {
     $(this).addClass('tasty');
   });
 }
-
+//bind event handler to input field!
 function pressIt() {
-  $('#typing').on('keydown', function(g) {
+  $('#typing').keydown(function(g) {
     if(g.which == 70) {
       alert('G was pressed');
-      return;
     }
   })
 }
