@@ -5,8 +5,8 @@ function getIt() {
   })
 }
 
-$(document).ready(function(){
-
-// call functions here
-
-});
+function frameIt() {
+  $('img').on('load', function(f) {
+    $(this).addClass('tasty');
+  });
+}
