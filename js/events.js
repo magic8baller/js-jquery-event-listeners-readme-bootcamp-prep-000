@@ -11,7 +11,7 @@ function frameIt() {
   });
 }
 
-document.body.addEventListener('keydown', pressIt, false);
+document.body.addEventListener('keydown', pressIt);
 function pressIt(e) {
   $('#typing').on('keydown', function(e) {
     if(g.which == 71) {
