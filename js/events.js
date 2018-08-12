@@ -16,7 +16,6 @@ function pressIt() {
     if(g.which == 70) {
       alert('G was pressed');
     }else {
-      return;
     }
   })
 }
