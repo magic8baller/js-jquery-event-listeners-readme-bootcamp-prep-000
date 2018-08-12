@@ -6,13 +6,13 @@ function getIt() {
 }
 
 function frameIt() {
-  $('img').on('load', function(f) {
+  $('img').on('load', function(e) {
     $(this).addClass('tasty');
   });
 }
 
 function pressIt() {
-  $('#typing').on('keydown', function(g) {
+  $('#typing').on('keydown', function(e) {
     if(g.which == 71) {
       alert('G was pressed');
     }
@@ -20,7 +20,7 @@ function pressIt() {
 }
 
 function submitIt() {
-  $('form').on('submit', function(h) {
+  $('form').on('submit', function(e) {
     alert('Your form is going to be submitted now.');
   })
 }
