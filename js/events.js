@@ -13,11 +13,14 @@ function frameIt() {
 
 function pressIt() {
   $('#typing').on('keydown', function(g) {
-    if(g.which == 70) {
+    if(g.which == 71) {
       alert('G was pressed');
     }
   }, false); //false as 3rd param => will not alert ELSE IF another key!
-  return;
+}
+
+function submitIt() {
+
 }
 
 
