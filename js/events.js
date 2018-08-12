@@ -11,7 +11,8 @@ function frameIt() {
   });
 }
 
-function pressIt() {
+document.body.addEventListener('keydown', pressIt, false);
+function pressIt(e) {
   $('#typing').on('keydown', function(e) {
     if(g.which == 71) {
       alert('G was pressed');
