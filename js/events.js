@@ -16,8 +16,9 @@ function pressIt() {
     if(g.which == 70) {
       alert('G was pressed');
     }
-  }, false);
+  }, false); //false as 3rd param => will not alert ELSE IF another key!
 }
+pressIt();
 
 $(document).ready(function(){
 
