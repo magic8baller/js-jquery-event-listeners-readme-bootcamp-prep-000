@@ -16,7 +16,7 @@ function pressIt() {
     if(g.which == 70) {
       alert('G was pressed');
     }
-  }, true);
+  }, false);
 }
 
 $(document).ready(function(){
