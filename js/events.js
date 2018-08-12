@@ -10,11 +10,19 @@ function frameIt() {
     $(this).addClass('tasty');
   });
 }
-//bind event handler to input field!
+
 function pressIt() {
-  $('#typing').keydown(function(g) {
+  $('#typing').on('keydown', function(g) {
     if(g.which == 70) {
       alert('G was pressed');
     }
   })
 }
+
+$(document).ready(function(){
+
+getIt();
+frameIt();
+pressIt();
+
+});
