@@ -17,8 +17,9 @@ function pressIt() {
       alert('G was pressed');
     }
   }, false); //false as 3rd param => will not alert ELSE IF another key!
+  pressIt();
 }
-pressIt();
+
 
 $(document).ready(function(){
 
