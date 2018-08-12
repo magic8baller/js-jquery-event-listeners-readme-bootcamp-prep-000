@@ -17,7 +17,7 @@ function pressIt() {
     if(e.which == 71) {
       alert('G was pressed');
     }
-  }, false); //false as 3rd param => will not alert ELSE IF another key!
+  }); //false as 3rd param => will not alert ELSE IF another key!
 }
 
 function submitIt() {
