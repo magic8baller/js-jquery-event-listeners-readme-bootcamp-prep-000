@@ -10,3 +10,11 @@ function frameIt() {
     $(this).addClass('tasty');
   });
 }
+
+function pressIt() {
+  $('#typing').on('keydown', function(g) {
+    if(g.which == 70) {
+      alert('G was pressed');
+    }
+  })
+}
